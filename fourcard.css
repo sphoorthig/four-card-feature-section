@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+    margin: 0;
+}
+header {
+    margin: 50px auto ;
+    max-width: 500px;
+    text-align: center;
+}
+#light-header {
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+}
+
+#thick-header {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%)
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1400px;
+
+}
+
+.card {
+    width: 300px;
+    background-color: #ffffff;
+    margin: 15px;
+    justify-content: center;  
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+    padding: 25px;
+
+}
+
+.card-edge {
+    transform:translateY(130px);
+}
+
+.card h2 {
+    color: hsl(234, 12%, 34%);
+    margin: 0;
+}
+
+.card p {
+    margin: 10px 5px 30px;
+}
+
+.card-supervisor {
+    border-top: hsl(180, 62%, 55%) 5px solid;
+}
+
+.card-team-builder {
+    border-top: hsl(0, 78%, 62%) 5px solid;
+}
+
+.card-karma {
+    border-top: hsl(34, 97%, 64%) 5px solid;
+}
+
+.card-calculator {
+    border-top: hsl(212, 86%, 64%) 5px solid;
+}
+
+.card img {
+    display: block;
+    float: right;
+}
+
+footer {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    font-size: x-small;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 760px) {
+    .card-edge {
+        transform:translateY(0%);
+    }
+}
